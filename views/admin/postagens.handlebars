@@ -1,0 +1,27 @@
+<h2>Lista de Postagens</h2>
+<hr>
+<a class="btn btn-primary" href="/admin/add-postagem">Nova Postagem</a>
+
+<div class="row" style="margin: 0px;">
+    {{#each postagens}}
+    <div class="col-lg-6 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <img src="" alt="" />
+            </div>
+            <div class="card-body">
+                <h2 class="text-center">{{titulo}}</h2>
+                <h6 class="text-justify">{{descricao}}</h6>
+                <small>Categoria: {{categoria.nome}}</small>&nbsp;&nbsp;&nbsp;
+                <small>Data: {{data}}</small>
+            </div>
+            <div class="text-center">
+                <a href="/admin/edit-postagem/{{_id}}" class="btn btn-primary mb-4">Editar</a>
+                <a href="/admin/postagens/delete/{{_id}}" class="btn btn-danger mb-4">Deletar</a>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <h2>Nenhuma postagem cadastrada</h2>
+    {{/each}}
+</div>
