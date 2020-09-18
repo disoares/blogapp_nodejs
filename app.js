@@ -1,12 +1,24 @@
 /*
 COMANDOS GIT
 
+(RETIRAR A PASTA NODE_MODULES NO ARQUIVO .gitignore)
 git init
 git add .
-git commig -am "texto a ser commitado"
+git commit -am "texto a ser commitado"
 git remote add origin https://github.com/disoares/blogapp_nodejs.git
 git push --force -u origin master
- */
+
+*/
+
+/*
+COMANDOS HEROKU
+
+heroku login
+heroku git:remote -a blogappnodejsdiego
+git push heroku master
+heroku open
+
+*/
 
 /*
 REPOSITÓRIOS UTILIZADOS
