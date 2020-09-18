@@ -2,8 +2,8 @@
 COMANDOS GIT
 
 git init
-git commit -m "Texto para o commit readme.md"
 git remote add origin https://github.com/disoares/blogapp_nodejs.git
+git push --force -u origin master
  */
 
 /*
