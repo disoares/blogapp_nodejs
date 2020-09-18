@@ -2,6 +2,8 @@
 COMANDOS GIT
 
 git init
+git add .
+git commig -am "texto a ser commitado"
 git remote add origin https://github.com/disoares/blogapp_nodejs.git
 git push --force -u origin master
  */
